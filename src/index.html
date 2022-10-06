@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <title>Films</title>
+    <link rel="icon" href="./images/159582.svg" type="image/svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/index.scss" />
+  </head>
+  <body>
+    <!-- ❗️❗️❗️ Add partials like so for every page -->
+    <!-- <include src="./partials/example.html"></include> -->
+    <include src="./partials/header-in.html"></include>
+
+    <main class="container" id="index-home">
+      <include src="./partials/darkOn.html"></include>
+      <include src="./partials/loader.html"></include>
+      <include src="./partials/gallery.html"></include>
+      <include src="./partials/pagination.html"></include>
+
+      <include src="./partials/film-modal.html"></include>
+      <include src="./partials/modal-team.html"></include>
+    </main>
+    <include src="./partials/back-to-top.html"></include>
+    <include src="./partials/footer.html"></include>
+
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

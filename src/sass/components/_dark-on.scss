@@ -1,0 +1,69 @@
+.dark a {
+  color: #ffffff;
+}
+
+body.dark {
+  background-color: #292c35;
+
+  & .footer {
+    color: #fff;
+    background-color: #383c49;
+  }
+
+  & .card-set__title {
+    color: #fff;
+  }
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  color: #fff;
+  border-radius: 50px;
+  border: solid 1px #ff6b08;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 28px;
+  width: 52px;
+  transform: scale(1);
+  left: 82%;
+  margin-top: 5px;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  position: absolute;
+  font-size: 12px;
+  left: 5px;
+  top: 7px;
+}
+
+.fa-sun {
+  font-size: 12px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+}

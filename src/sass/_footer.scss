@@ -1,0 +1,99 @@
+.footer {
+  background-color: #f7f7f7;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--footer-text-color);
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.footer__container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+}
+
+.footer__link {
+  color: var(--footer-text-color);
+}
+
+.footer__first-element {
+  margin-bottom: 10px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+
+.footer__below-elements {
+  display: flex;
+}
+
+/* .footer__dev {
+  margin-right: 10px;
+}
+ */
+.footer__icon {
+  margin-right: 10px;
+}
+
+/// -------------------
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: var(--primary-orange-color);
+  display: inline-block;
+  height: 8px;
+  margin: 0 10px 0 10px;
+
+  top: 0;
+  transform: rotate(-45deg);
+
+  left: 45%;
+  top: 45%;
+  width: 8px;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  background-color: var(--primary-orange-color);
+  border-radius: 50%;
+  height: 8px;
+  position: absolute;
+  width: 8px;
+}
+
+.heart:before {
+  top: -4px;
+  left: 0;
+}
+
+.heart:after {
+  left: 4px;
+  top: 0;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(-45deg);
+  }
+  40% {
+    transform: scale(1.5) rotate(-45deg);
+  }
+}

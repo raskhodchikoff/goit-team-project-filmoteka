@@ -1,0 +1,31 @@
+.empty-library {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  // margin-left: auto;
+  // margin-right: auto;
+  width: 100%;
+}
+
+.empty-library__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-orange-color);
+  // box-shadow: 10px 10px 10px 3px var(--black-color);
+}
+
+.position {
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    width: 50%;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 35%;
+  }
+}

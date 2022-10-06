@@ -1,0 +1,233 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+
+  background-color: hsla(0, 0%, 0%, 0.25);
+  z-index: 999;
+  transition: visibility 0.5s, opacity 0.5s;
+  overflow: auto;
+}
+
+.film-card {
+  background-color: var(--white-color);
+  width: 280px;
+  position: absolute;
+  margin-top: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 48px 20px 40px 20px;
+
+  @media screen and(min-width:$tablet) {
+    margin-top: 0px;
+    height: auto;
+    width: 704px;
+    display: flex;
+    padding: 40px 72px 40px 36px;
+  }
+  @media screen and(min-width:$desktop) {
+    height: auto;
+    width: 814px;
+    padding: 40px 16px 40px 16px;
+  }
+}
+
+.film-card__box {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+  }
+}
+
+.film-card__button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--white-color);
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 0;
+    margin-top: 8px;
+    margin-right: 8px;
+  }
+}
+
+.film-card__image-block {
+  margin-right: 0;
+  @media screen and(min-width:$tablet) {
+    margin-right: 68px;
+  }
+  @media screen and(min-width:$desktop) {
+    margin-right: 16px;
+  }
+}
+
+.film-card__image {
+  width: 240px;
+  height: 357px;
+  margin: 0 auto;
+  border-radius: 5px;
+  @media screen and(min-width:$tablet) {
+    width: 264px;
+    height: 374px;
+  }
+  @media screen and(min-width:$desktop) {
+    width: 375px;
+    height: 478px;
+  }
+}
+
+.film-card__description-set {
+  margin-bottom: 20px;
+}
+
+.film-card__description-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @media screen and(min-width:$tablet) {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width:$desktop) {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.description-set {
+  display: flex;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.description-set__text {
+  width: 69px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 40px;
+  margin-bottom: 8px;
+  color: var(--description-color);
+  @media screen and(min-width:$desktop) {
+    margin-right: 83px;
+  }
+}
+
+.description-about__title {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.description-about__text {
+  @media screen and(min-width:$tablet) {
+    width: 264px;
+  }
+  @media screen and(min-width:$desktop) {
+    width: 380px;
+  }
+}
+
+.description-set__value {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.description-set__rating {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 1px 9px 1px 9px;
+  background-color: var(--secondary-orange-color);
+  border-radius: 5px;
+  color: var(--black-color);
+}
+
+.description-set__separator {
+  color: var(--description-color);
+}
+
+.description-set__vote {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  background: var(--footer-bg-color);
+  border-radius: 5px;
+  padding: 1px 4px 1px 4px;
+}
+
+.film-card__description-button {
+  display: flex;
+}
+
+.description-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  width: 110px;
+  height: 44px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border-radius: 5px;
+  border: 1px solid var(--black-color);
+  text-transform: uppercase;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+  &:focus {
+    background-color: var(--secondary-orange-color);
+    color: var(--white-color);
+    border: none;
+  }
+  @media screen and(min-width:$tablet) {
+    width: 125px;
+  }
+  @media screen and(min-width:$desktop) {
+    width: 136px;
+  }
+}
+
+.button-close__icon {
+  background-color: transparent;
+  color: var(--black-color);
+
+  cursor: pointer;
+  border: none;
+}
+
+.film-card__description-about {
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.film-card__wrapper {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+  }
+}
+
+.description-about__title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--black-color);
+}
+
+.description-about__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--black-color);
+  max-height: 160px;
+  overflow-y: auto;
+}

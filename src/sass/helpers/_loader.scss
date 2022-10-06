@@ -1,0 +1,117 @@
+.fountainG {
+    //color: #ff6b08;
+    color: var(--primary-orange-color);
+  }
+  .loader {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  #fountainG {
+    position: relative;
+    width: 270px;
+    height: 33px;
+    margin: auto;
+  }
+  .fountainG {
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-orange-color);
+    width: 33px;
+    height: 33px;
+    animation-name: bounce_fountainG;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform: scale(0.3);
+    border-radius: 21px;
+  }
+  #fountainG_1 {
+    left: 0;
+    animation-delay: 0.52s;
+  }
+  #fountainG_2 {
+    left: 34px;
+    animation-delay: 0.65s;
+  }
+  #fountainG_3 {
+    left: 68px;
+    animation-delay: 0.78s;
+  }
+  #fountainG_4 {
+    left: 101px;
+    animation-delay: 0.91s;
+  }
+  #fountainG_5 {
+    left: 135px;
+    animation-delay: 1.04s;
+  }
+  #fountainG_6 {
+    left: 169px;
+    animation-delay: 1.17s;
+  }
+  #fountainG_7 {
+    left: 203px;
+    animation-delay: 1.3s;
+  }
+  #fountainG_8 {
+    left: 236px;
+    animation-delay: 1.43s;
+  }
+  @keyframes bounce_fountainG {
+    0% {
+      transform: scale(1);
+      background-color: var(--primary-orange-color);
+    }
+    100% {
+      transform: scale(0.3);
+      background-color: var(--secondary-orange-color);
+    }
+  }
+  @-o-keyframes bounce_fountainG {
+    0% {
+      -o-transform: scale(1);
+      background-color: var(--primary-orange-color);
+    }
+    100% {
+      -o-transform: scale(0.3);
+      background-color: var(--secondary-orange-color);
+    }
+  }
+  @-ms-keyframes bounce_fountainG {
+    0% {
+      -ms-transform: scale(1);
+      background-color: var(--primary-orange-color);
+    }
+    100% {
+      -ms-transform: scale(0.3);
+      background-color: var(--secondary-orange-color);
+    }
+  }
+  @-webkit-keyframes bounce_fountainG {
+    0% {
+      -webkit-transform: scale(1);
+      background-color: var(--primary-orange-color);
+    }
+    100% {
+      -webkit-transform: scale(0.3);
+      background-color: var(--secondary-orange-color);
+    }
+  }
+  @-moz-keyframes bounce_fountainG {
+    0% {
+      -moz-transform: scale(1);
+      background-color: var(--primary-orange-color);
+    }
+    100% {
+      -moz-transform: scale(0.3);
+      background-color: var(--secondary-orange-color);
+    }
+  }
